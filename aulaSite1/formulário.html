@@ -1,46 +1,123 @@
 <!DOCTYPE html>
 <HTML>
-      <head>
-        <title>Formulário</title>
-    </head>
-    <body>
-        <ul>
-            <li>
-                <a href="index.html">home</a>
-            </li>
-             <li>
-                <a href="tabela.html">tabela</a>
-            </li>
-            <li>
-                <a href="lista.html">Lista</a>
-            </li>
-             <li>
-                <a href="img.html">imagem</a>
-            </li>
-        </ul>
 
-        <form>
+<head>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="index.html">home</a>
+        </li>
+        <li>
+            <a href="tabela.html">tabela</a>
+        </li>
+        <li>
+            <a href="lista.html">Lista</a>
+        </li>
+        <li>
+            <a href="img.html">imagem</a>
+        </li>
+    </ul>
+
+    <form>
+        <div>
+            <label for="name">nome:</label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="idade">idade:</label>
+            <input type="number" min="0" max="120">
+        </div>
+        <br>
+        <div>
+            <label for="usuario">usuario:</label>
+            <input type="password">
+        </div>
+        <br>
+        <div>
+            <label for="evento">data do evento:</label>
+            <input type="datetime-local">
+        </div>
+        <br>
+        <div>
+            <label for="">
+                telefone:
+                <input type="tel" required placeholder="(xx) x xxxx-xxxx">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">
+                Email: <input type="email" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="peso">
+                peso <input type="number" min="0" max="200" step="0,5">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="volume">
+                volume <input type="range" min="0" max="100" step="1">
+            </label>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>estado civil</legend>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="casado"> Casado:
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="solteiro"> Solteiro:
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="divorciado"> Divorciado:
+                    </label>
+                </p>
+            </fieldset>
+            <br>
             <div>
-                <label for="name">nome:</label>
-                <input type="text">
+                <fieldset>
+                    <legend>produtos</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="computador" value="computador"> computador
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="impressora" value="impressora">
+                        </label>
+
+                    </p>
+                    <label>
+                        <input type="checkbox" name="monitor" value="monitor">
+                    </label>
+
+                    </p>
+                </fieldset>
             </div>
-            <br>
-           <div>
-                <label for="idade">idade:</label>
-                <input type="number" min="0" max="120">
-           </div>
-            <br>
-            <div>
-                <label for="usuario">usuario:</label>
-                <input type="password">
-            </div>
-            <br>
-            <div>
-                <label for="evento">data do evento:</label>
-                <input type="datetime-local">
-            </div>
-            <br>
-            
-            <button type="submit">enviar</button>
-        </form>
+        </div>
+        <br>
+        <div>
+            <label>
+                deixe sua opnião
+                <textarea cols="30" rows="5"></textarea>
+            </label>
+        </div>
+
+        <button type="submit">enviar</button>
+    </form>
+
 </HTML>
