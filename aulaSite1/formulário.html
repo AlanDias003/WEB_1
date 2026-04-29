@@ -116,7 +116,30 @@
                 <textarea cols="30" rows="5"></textarea>
             </label>
         </div>
+        <div>
+            <p>
+                <label>
+                    Site: <input type="url" list="sites" name="link">
+                </label>
+            </p>
+            <datalist id="sites">
+                <option label="pinterest" value="https://br.pinterest.com/"></option>
 
+                <option label="nima" value="https://international.unipam.edu.br/"></option>
+
+                <option label="portal" value="https://portal.unipam.edu.br/login"></option>
+            </datalist>
+        </div>
+        <div>
+            <p>
+                Carro:
+                <select name="carros" required>
+                    <optgroup> <label for="1 esportivos">
+                            <option value="1.1">Ferrari</option>
+                            <option value="1.2"></option>
+                </select>
+            </p>
+        </div>
         <button type="submit">enviar</button>
     </form>
 

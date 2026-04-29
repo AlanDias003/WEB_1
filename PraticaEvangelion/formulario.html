@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formulário</title>
-    </head>
-    <body>
-        <h2>Formulário de inscrição</h2>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="lista.html">lista</a></li>
-            <li><a href="tabela.html">tabela</a></li>
-            <li><a href="imagem.html">imagem</a></li>
-        </ul>
-        <form>
+
+<head>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h2>Formulário de inscrição</h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="lista.html">lista</a></li>
+        <li><a href="tabela.html">tabela</a></li>
+        <li><a href="imagem.html">imagem</a></li>
+    </ul>
+    <form>
+        <div>
             <label>name</label>
             <input type="text">
+        </div>
+        <br>
+        <div>
             <button>send</button>
+        </div>
+        <br>
+        <div>
             <label>age</label>
-            <input type="number">
-            <button>send</button>
-        </form>
-    </body>
+            <input type="number" min="12" max="17">
+        </div>
+        <br>
+        <div>
+            <label for="usuario">user:</label>
+            <input type="password">
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>EVA de interesse</legend>
+                <p>
+                    <label>
+                        <input type="radio" name="EVA_int" value="EVA00"> EVA00
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="EVA_int" value="EVA01"> EVA01
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="EVA_int" value="EVA02"> EVA02
+                    </label>
+                </p>
+            </fieldset>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Missoes de interesse</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="missao_relampago" value="missao_relampago"> Missoes rapidas sem
+                            cabo
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="missao_defesa" value="missao_defesa"> Missoes planejadas para
+                            defender ataques
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="missao_extra" value="missao_extra"> Missoes diversas que surgem
+                            como demanda
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Motivos para querer ser um piloto
+                    <textarea cols="30" rows="5"></textarea>
+                </label>
+            </div>
+        </div>
+        <button>send</button>
+    </form>
+</body>
+
 </html>

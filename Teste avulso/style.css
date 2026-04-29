@@ -1,0 +1,15 @@
+
+
+h1{
+    text-align: center;
+    color: rgb(253, 0, 0);
+    background-color: rgb(66, 33, 99);
+}
+p{
+    font-size: larger;
+}
+.p{
+    background-color: blueviolet;
+    width: 500px;
+    
+}
