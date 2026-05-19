@@ -1,0 +1,60 @@
+:root {
+  /* Fundos */
+  --bg-base:          #1A1712;
+  --bg-surface:       #23211C;
+  --bg-raised:        #2E2B24;
+  --bg-card:          #3B3830;
+
+  /* Primária — carmim soviético */
+  --primary-muted:    #7A1C1C;
+  --primary:          #9E2A2A;
+  --primary-light:    #C23B3B;
+  --primary-pale:     #D9726E;
+
+  /* Accent — verde militar */
+  --accent-muted:     #2E3D22;
+  --accent:           #4A6331;
+  --accent-light:     #6A8C4A;
+  --accent-pale:      #9AB87A;
+
+  /* Dourado envelhecido */
+  --gold-muted:       #5C440E;
+  --gold:             #8C6A18;
+  --gold-light:       #B8902E;
+  --gold-pale:        #D4B86A;
+
+  /* Tipografia */
+  --text-primary:     #F0E8D8;
+  --text-secondary:   #B8AD98;
+  --text-muted:       #7A7265;
+  --border:           #4A4438;
+}
+
+
+/******************index*******************************/
+
+.carousel-item img {
+    height: 400px;      /* altura fixa */
+    object-fit: cover;  /* corta a imagem proporcionalmente */
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 0;
+    
+}
+.carousel-slide{
+    background-color: var(--primary);
+    margin-left: 10px;
+
+}
+
+body{
+    background-color: var(--bg-surface);
+    
+}
+main{
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+}
+main h1{
+    background-color: var(--primary);
+}
